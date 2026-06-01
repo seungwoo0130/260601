@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBTI 테스트</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 시작화면 -->
+    <section id="start-screen">
+        <h1>MBTI 성격 유형 검사</h1>
+        <p>나의 성격은 어떤 유형일까?</p>
+
+        <button id="start-btn">
+            테스트 시작
+        </button>
+    </section>
+
+    <!-- 질문화면 -->
+    <section id="question-screen" class="hidden">
+
+        <div class="progress">
+            <span id="progress-text"></span>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div class="answers">
+            <button id="answerA"></button>
+            <button id="answerB"></button>
+        </div>
+
+    </section>
+
+    <!-- 결과화면 -->
+    <section id="result-screen" class="hidden">
+
+        <h1 id="mbti-result"></h1>
+
+        <p id="mbti-description"></p>
+
+        <button id="restart-btn">
+            다시 테스트
+        </button>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
